@@ -11,7 +11,7 @@ services:
       - PUID=1000
       - PGID=1000
       - TZ=Asia/Shanghai
-      - WEBUIPORT=8180
+      - WEBUIPORT=8080
     volumes:
       - ./config:/config
       - ./downloads:/downloads
