@@ -29,3 +29,5 @@ jobs:
       - name: Run update script
         run: ./update.sh
         shell: bash
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
