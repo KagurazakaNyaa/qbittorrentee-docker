@@ -12,6 +12,5 @@ git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
 git add currentversion Dockerfile
 git commit -a -m "Auto Update to qBittorrent-Enhanced-Edition $version"
 git tag -f "$version"
-git tag -f latest
 git push
 git push origin --tags -f
