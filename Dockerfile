@@ -13,6 +13,8 @@ RUN curl -L https://github.com/c0re100/qBittorrent-Enhanced-Edition/releases/dow
     unzip /tmp/qbittorrent-enhanced-nox.zip -d /usr/bin &&\
     rm -f /tmp/qbittorrent-enhanced-nox.zip
 
+RUN chmod a+x /usr/bin/qbittorrent-nox
+
 COPY qBittorrent.conf /usr/local/qbittorrent/defaults/qBittorrent.conf
 COPY docker-entrypoint.sh /docker-entrypoint.sh
 RUN chmod +x /docker-entrypoint.sh
